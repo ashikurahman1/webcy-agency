@@ -22,26 +22,22 @@ const HeroSection = () => {
             Let's help you take your business to the next level!
           </p>
           <div className="flex space-x-4 justify-center lg:justify-start">
-            <Link
-              to="/pricing"
-              className="btn btn-primary bg-sky-700 px-8 border-0 hover:bg-sky-800 shadow-sky-700"
-            >
+            <button className="bg-sky-700 text-white px-6 py-3 rounded-md flex justify-center items-center space-x-2 hover:bg-sky-900 transition">
+              {' '}
               Get Started{' '}
               <span>
+                {' '}
                 <FiArrowRight />
               </span>
-            </Link>
-            <Link
-              to="/login"
-              className="btn btn-outline text-sky-700 border-sky-700 btn-primary hover:bg-sky-700 hover:outline-0 hover:text-white px-8 shadow-sky-700"
-            >
+            </button>
+            <button className="border border-sky-700 px-6 py-3 rounded-md hover:bg-sky-700 hover:text-white text-sky-700 transition">
               Contact Us
-            </Link>
+            </button>
           </div>
         </div>
 
         {/* Right */}
-        <div className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-end relative">
+        <div className="w-full items-center lg:w-1/2 mt-10 lg:mt-0 flex justify-center relative">
           <div className="relative group">
             <img
               src={bannerImg}

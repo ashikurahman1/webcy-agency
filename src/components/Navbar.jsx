@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
+  console.log(user);
+
+  const handleLogout = () => {
+    logout();
+  };
+
   return (
-    <div className="navbar max-w-screen-2xl container mx-auto bg-white p-5">
-      <div className="navbar-start">
+    <div className=" navbar max-w-screen-2xl container mx-auto bg-white p-5 ">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -25,7 +33,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-md dropdown-content bg-base-100 rounded-box z-100 mt-3 w-52 p-2 shadow"
           >
             <li>
               <Link to="/">Home</Link>
@@ -58,12 +66,12 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="text-xl font-bold flex items-center ">
-          <img src="/public/logo.png" alt="" className="w-10" />
+          <img src="/public/logo.png" alt="" className="w-14" />
           <span className="ml-2 text-[#697077] hidden sm:block">Websygen</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 z-100 ">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -76,7 +84,7 @@ const Navbar = () => {
           <li>
             <details>
               <summary>Categories</summary>
-              <ul className="p-2 w-40">
+              <ul className="p-2 w-60">
                 <li>
                   <Link to="/">Web Design</Link>
                 </li>
@@ -95,18 +103,38 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link
-          to="/login"
-          className="btn btn-outline text-sky-700 border-sky-700 btn-primary hover:bg-sky-700 hover:outline-0 hover:text-white px-8 hidden sm:flex shadow-sky-700"
-        >
-          Log In
-        </Link>
-        <Link
-          to="/pricing"
-          className="btn btn-primary bg-sky-700 px-8 ml-4 border-0 hover:bg-sky-800 shadow-sky-700"
-        >
-          Start Free Trial
-        </Link>
+        {user ? (
+          <>
+            <Link
+              to="/dashboard"
+              className="btn btn-outline text-sky-700 border-sky-700  hover:bg-sky-700 hover:outline-0 hover:text-white px-8 hidden sm:flex shadow-sky-700"
+            >
+              Dashboard
+            </Link>
+            <button
+              onClick={handleLogout}
+              className="btn text-white bg-sky-700 px-8 ml-4 border-0 hover:bg-sky-800 shadow-sky-700"
+            >
+              {' '}
+              Logout
+            </button>
+          </>
+        ) : (
+          <>
+            <Link
+              to="/login"
+              className="btn btn-outline text-sky-700 border-sky-700  hover:bg-sky-700 hover:outline-0 hover:text-white px-8 hidden sm:flex shadow-sky-700"
+            >
+              Log In
+            </Link>
+            <Link
+              to="/pricing"
+              className="btn text-white bg-sky-700 px-8 ml-4 border-0 hover:bg-sky-800 shadow-sky-700"
+            >
+              Start Free Trial
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

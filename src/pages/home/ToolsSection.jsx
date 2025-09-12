@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiCloud, FiCode, FiSettings, FiSmartphone } from 'react-icons/fi';
+import HeadingSection from '../../components/HeadingSection';
 const tools = [
   {
     icon: FiSettings,
@@ -28,14 +29,18 @@ const ToolsSection = () => {
   return (
     <div className="max-w-screen-2xl container mx-auto py-20 px-5">
       {/* Heading Section */}
-      <div className="text-center mb-10">
+      {/* <div className="text-center mb-10">
         <p className="text-sky-700 font-semibold uppercase ">
           The tools you need
         </p>
         <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-3">
           All-in-One Solution for Your Projects
         </h2>
-      </div>
+      </div> */}
+      <HeadingSection
+        subheading={'The tools you need'}
+        heading={'All-in-One Solution for Your Projects'}
+      />
 
       {/* render tools here */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
@@ -53,7 +58,7 @@ const ToolsSection = () => {
 
       {/* Button */}
       <div className="text-center ">
-        <button className="btn btn-primary bg-sky-700 px-8 border-0 hover:bg-sky-800 shadow-sky-700">
+        <button className="bg-sky-700 text-white px-6 py-3 rounded-md  space-x-2 hover:bg-sky-900 transition">
           Explore More
         </button>
       </div>
