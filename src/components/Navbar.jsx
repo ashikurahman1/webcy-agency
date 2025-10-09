@@ -123,13 +123,13 @@ const Navbar = () => {
           <>
             <Link
               to="/login"
-              className="btn btn-outline text-sky-700 border-sky-700  hover:bg-sky-700 hover:outline-0 hover:text-white px-8 hidden sm:flex shadow-sky-700"
+              className="btn btn-outline text-sky-700 border-sky-700  hover:bg-sky-700 hover:outline-0 hover:text-white px-8 shadow-sky-700"
             >
               Log In
             </Link>
             <Link
               to="/pricing"
-              className="btn text-white bg-sky-700 px-8 ml-4 border-0 hover:bg-sky-800 shadow-sky-700"
+              className="btn text-white bg-sky-700 px-8 ml-4 border-0 hover:bg-sky-800 shadow-sky-700 hidden md:flex"
             >
               Start Free Trial
             </Link>

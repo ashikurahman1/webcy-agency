@@ -1,29 +1,26 @@
-# React + Vite
+# Webcygen Agency
 
-This template provides a minimal setup to get React working in Vite with HMR and
-some ESLint rules.
+![Webcygen Agency](https://raw.githubusercontent.com/ashikurahman1/ashikur-dev/refs/heads/main/src/assets/projectsImg/webcy-agency.vercel.app_.png)
 
-Currently, two official plugins are available:
+A modern, responsive agency website built with React, Tailwind CSS, and
+Firebase. This template is designed for creative agencies, freelancers, and
+digital studios looking to establish a professional online presence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+Explore the live version of the site here:  
+👉 [https://webcy-agency.vercel.app](https://webcy-agency.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript
-with type-aware lint rules enabled. Check out the
-[TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts)
-for information on how to integrate TypeScript and
-[`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
 
-<!--  -->
+- **Frontend**: React
+- **Styling**: Tailwind CSS
+- **Backend**: Firebase (Authentication, Firestore, Hosting)
+- **Deployment**: Vercel
 
-# React form Hook using
+## 📦 Features
 
-# SweetAler2 Showing
-
-# Firebase console registration, install npm firebase, create vit variable, add firebase api and others in vite variable, auth email login register with firebase, login with firebase.
-
-# https://freefrontend.com/ for free resoureces
+- **Responsive Design**: Optimized for all screen sizes.
+- **Smooth Animations**: Powered by Tailwind CSS transitions.
+- **Firebase Integration**: Real-time data handling and user authentication.
+- **SEO Optimized**: Built with best practices for search engine visibility.
