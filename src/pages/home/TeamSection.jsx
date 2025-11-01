@@ -9,22 +9,22 @@ import {
 
 const members = [
   {
-    img: '/public/images/members/person1.png',
+    img: '/images/members/person1.png',
     name: 'Johne Doe',
     designation: 'Ceo',
   },
   {
-    img: '/public/images/members/person2.png',
+    img: '/members/person2.png',
     name: 'Jane Smith',
     designation: 'cto',
   },
   {
-    img: '/public/images/members/person3.png',
+    img: '/images/members/person3.png',
     name: 'Mark Johnson',
     designation: 'Designer',
   },
   {
-    img: '/public/images/members/person4.png',
+    img: '/images/members/person4.png',
     name: 'Emily Carter',
     designation: 'Developer',
   },
