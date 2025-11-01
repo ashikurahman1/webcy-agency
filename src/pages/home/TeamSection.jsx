@@ -14,7 +14,7 @@ const members = [
     designation: 'Ceo',
   },
   {
-    img: '/members/person2.png',
+    img: '/images/members/person2.png',
     name: 'Jane Smith',
     designation: 'cto',
   },
