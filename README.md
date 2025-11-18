@@ -13,7 +13,7 @@ Currently, this project implements **authentication with Firebase**.
 ## Live Demo
 
 Explore the live version of the site here:  
-<a href="https://task-alphav1.vercel.app" target="_blank">https://task-alphav1.vercel.app</a>
+<a href="https://webcy-agency.vercel.app/" target="_blank">https://webcy-agency.vercel.app</a>
 
 ---
 
