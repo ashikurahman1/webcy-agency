@@ -1,6 +1,6 @@
 # 🌐 Webcygen Agency
 
-![Webcygen Agency](https://i.ibb.co/ynJdLM33/webcy-agency-vercel-app-1.png)
+![Webcygen Agency](./assets/webcy-agency.png)
 
 A modern, responsive agency website built with **React**, **Tailwind CSS**, and
 **Firebase**.  
