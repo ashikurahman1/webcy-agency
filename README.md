@@ -1,6 +1,6 @@
 # 🌐 Webcygen Agency
 
-![Webcygen Agency](./assets/webcy-agency.png)
+![Webcygen Agency](https://raw.githubusercontent.com/ashikurahman1/webcy-agency/refs/heads/main/src/assets/webcy-agency.png)
 
 A modern, responsive agency website built with **React**, **Tailwind CSS**, and
 **Firebase**.  
